@@ -88,7 +88,7 @@ class HeatmapConfig:
 
     @property
     def best_params_file(self) -> Path:
-        return self.project_root / "results" / f"{self.model_name}_best_params_{self.task_name}.txt"
+        return self.project_root / "config" / "DeepTPACS_best_params_index.txt"
 
     @property
     def output_dir(self) -> Path:

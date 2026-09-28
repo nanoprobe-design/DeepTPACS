@@ -1,0 +1,42 @@
+{
+  "platform": "Linux-6.11.0-19-generic-x86_64-with-glibc2.39",
+  "system": "Linux",
+  "release": "6.11.0-19-generic",
+  "machine": "x86_64",
+  "processor": "x86_64",
+  "python": "3.10.18 (main, Jun  5 2025, 13:14:17) [GCC 11.2.0]",
+  "packages": {
+    "numpy": "2.2.5",
+    "pandas": "2.3.2",
+    "torch": "2.8.0+cu128",
+    "dgl": "2.4.0+cu124",
+    "dgllife": "0.3.2",
+    "rdkit": "2025.03.6",
+    "scikit-learn": "1.7.2",
+    "scipy": "1.15.3",
+    "matplotlib": "3.10.6",
+    "seaborn": "0.13.2",
+    "networkx": "3.4.2",
+    "tqdm": "4.67.1",
+    "easydict": "1.13",
+    "hyperopt": "0.2.7",
+    "optuna": "NOT AVAILABLE (ModuleNotFoundError: No module named 'optuna')",
+    "xgboost": "NOT AVAILABLE (ModuleNotFoundError: No module named 'xgboost')",
+    "tensorflow": "NOT AVAILABLE (ModuleNotFoundError: No module named 'tensorflow')",
+    "joblib": "1.5.2"
+  },
+  "cuda_available": true,
+  "torch_cuda": "12.8",
+  "cudnn": 91002,
+  "gpu_count": 3,
+  "gpus": [
+    "NVIDIA GeForce RTX 5080",
+    "NVIDIA GeForce RTX 5080",
+    "NVIDIA GeForce RTX 5080"
+  ],
+  "nvidia_smi": [
+    "NVIDIA GeForce RTX 5080, 580.173.02, 16303 MiB",
+    "NVIDIA GeForce RTX 5080, 580.173.02, 16303 MiB",
+    "NVIDIA GeForce RTX 5080, 580.173.02, 16303 MiB"
+  ]
+}

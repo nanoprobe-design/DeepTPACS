@@ -1,0 +1,17 @@
+{
+  "model_name": "DeepTPACS",
+  "target": "lg(TPACS)",
+  "checkpoint": "model/trained.pt",
+  "checkpoint_sha256": "edc7eb36f6e0f5860741b93f547e5501cc079657256da81a02a955e2c9e0ec0e",
+  "checkpoint_top_level_keys": ["model_state_dict", "timestep"],
+  "checkpoint_timestep": 265,
+  "checkpoint_tensor_count": 46,
+  "node_feature_size": 30,
+  "edge_feature_size": 13,
+  "graph_feature_size": 300,
+  "num_layers": 3,
+  "num_timesteps": 2,
+  "output_tasks": 1,
+  "best_params_index_file": "config/DeepTPACS_best_params_index.txt",
+  "best_params_sha256": "ae87c84e459904c0b7928ba101b4f94eb7b386f5eb64d1f0edb5ba2e1f48c3b5"
+}

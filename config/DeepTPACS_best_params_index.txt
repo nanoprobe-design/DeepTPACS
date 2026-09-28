@@ -1,0 +1,6 @@
+dropout : 0
+graph_feat_size : 2
+l2 : 2
+lr : 1
+num_layers : 1
+num_timesteps : 0

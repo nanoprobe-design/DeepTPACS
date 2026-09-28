@@ -117,7 +117,7 @@ def build_config(argv):
         "eval_batch_size": 32,
         "patience": 50,
         "opt_iters": 30,
-        "device": torch.device("cuda:" + str(argv[2]) if torch.cuda.is_available() else "CPU"),
+        "device": torch.device("cuda:" + str(argv[2]) if torch.cuda.is_available() else "cpu"),
         "input": "SMILES",
         "tasks": list(DEFAULT_TASKS),
         "full_path": PROJECT_ROOT,
@@ -770,6 +770,11 @@ def run_feature_experiments(args):
     best_params_path = get_best_params_path(args)
 
     df = pd.read_csv(os.path.join(args.full_path, args.file_name))
+    # The public sample CSV uses the column label ``log(TPACS)`` whereas the
+    # historical training scripts refer to the same target as ``lg(TPACS)``.
+    # Preserve the historical task name while accepting the released sample file.
+    if "lg(TPACS)" not in df.columns and "log(TPACS)" in df.columns:
+        df["lg(TPACS)"] = df["log(TPACS)"]
     args.len_dataset = len(df)
     feature_index_selected, AtomFeaturizer = build_atom_featurizer(args.feature_num)
 

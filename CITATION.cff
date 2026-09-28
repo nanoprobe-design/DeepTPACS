@@ -1,0 +1,9 @@
+cff-version: 1.2.0
+message: "If you use DeepTPACS, please cite the associated article."
+title: "DeepTPACS"
+type: software
+license: MIT
+repository-code: "https://github.com/nanoprobe-design/DeepTPACS"
+url: "https://www.TPACS.top"
+abstract: "Graph neural-network workflows for prediction and analysis of two-photon action cross-sections."
+# Add the final software release version, DOI, authors, and publication DOI before archival release.

@@ -1,0 +1,17 @@
+# Core DeepTPACS GNN training/inference stack.
+# Exact versions used for manuscript validation should be recorded by
+# `python tools/collect_environment.py` in environment/TESTED_ENVIRONMENT.md.
+numpy
+pandas
+torch
+dgl
+dgllife
+rdkit
+scikit-learn
+scipy
+matplotlib
+seaborn
+networkx
+tqdm
+easydict
+hyperopt

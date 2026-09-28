@@ -1,0 +1,24 @@
+DeepTPACS validation report
+======================================
+
+Release verification:
+DeepTPACS release verification: PASS
+ checkpoint: model/trained.pt
+ SHA-256: edc7eb36f6e0f5860741b93f547e5501cc079657256da81a02a955e2c9e0ec0e
+ graph feature size: 300
+ GNN layers: 3
+ readout timesteps: 2
+
+Demo command:
+python predict_csv.py --input demo/input_smiles.csv --output demo/demo_output.csv --device auto
+
+Demo runtime: 5.297 s
+Demo molecules: 3
+Reference output: demo/reference_output.csv
+
+Program output:
+Processing dgl graphs from scratch...
+Device: cuda:0
+Predicted 3 molecules
+Saved: demo/demo_output.csv
+

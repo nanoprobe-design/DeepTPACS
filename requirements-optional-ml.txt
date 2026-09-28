@@ -1,0 +1,5 @@
+# Optional dependencies for the classical-ML workflows.
+optuna
+xgboost
+tensorflow
+joblib
