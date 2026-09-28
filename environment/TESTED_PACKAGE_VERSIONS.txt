@@ -1,0 +1,24 @@
+# Package versions observed in the validated DeepTPACS GNN demo environment
+# This is a provenance record, not a universal pip installation file.
+# CUDA-specific PyTorch/DGL builds may require platform-specific package indexes.
+
+numpy==2.2.5
+pandas==2.3.2
+torch==2.8.0+cu128
+dgl==2.4.0+cu124
+dgllife==0.3.2
+rdkit==2025.03.6
+scikit-learn==1.7.2
+scipy==1.15.3
+matplotlib==3.10.6
+seaborn==0.13.2
+networkx==3.4.2
+tqdm==4.67.1
+hyperopt==0.2.7
+joblib==1.5.2
+easydict==1.13
+
+# Optional classical-ML packages were NOT installed in this validation environment:
+# optuna
+# xgboost
+# tensorflow

@@ -39,12 +39,12 @@ BUILD_BIN_ONLY = False
 PROJECT_ROOT = Path(__file__).resolve().parent
 DEVICE = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 
-INPUT_NPY = Path("D:/GNN_TPCS/virtual_screen_data/chemical_space.npy")
-OUTPUT_NPZ = Path("D:/GNN_TPCS/virtual_screen_data/chemical_space_predictions.npz")
+INPUT_NPY = PROJECT_ROOT / "data_process" / "chemical_space.npy"
+OUTPUT_NPZ = PROJECT_ROOT / "results" / "virtual_screen_data" / "chemical_space_predictions.npz"
 OUTPUT_PART_TEMPLATE = "chemical_space_predictions_part_{part_index}.npz"
-CACHE_BIN = Path("D:/GNN_TPCS/virtual_screen_data/chemical_space.bin")
+CACHE_BIN = PROJECT_ROOT / "results" / "virtual_screen_data" / "chemical_space.bin"
 CHECKPOINT = PROJECT_ROOT / "model" / "trained.pt"
-BEST_PARAMS_FILE = PROJECT_ROOT / "results" / f"{MODEL_NAME}_best_params_{TASK}.txt"
+BEST_PARAMS_FILE = PROJECT_ROOT / "config" / "DeepTPACS_best_params_index.txt"
 
 FEATURE_ORDER = [1, 2, 0, 4, 13, 5, 6, 7, 8, 11, 9, 10, 12, 14, 3]
 ATOM_FEATURE_BUILDERS = [

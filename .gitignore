@@ -1,4 +1,4 @@
-﻿# Python
+# Python
 __pycache__/
 *.pyc
 *.pyo
@@ -50,4 +50,14 @@ checkpoint/
 *.ckpt
 
 # Optional local data artifacts
+ml/input_files/*.csv
 ml/input_files/ori_data/
+
+# Released artifacts that must remain tracked despite broad binary/output ignores
+!model/trained.pt
+!config/DeepTPACS_best_params_index.txt
+!config/DeepTPACS_resolved_hyperparameters.yaml
+!config/model_release.json
+!demo/reference_output.csv
+!environment/TESTED_ENVIRONMENT.md
+!environment/VALIDATION_REPORT.txt

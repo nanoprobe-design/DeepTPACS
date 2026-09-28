@@ -1,0 +1,30 @@
+# DeepTPACS hyperparameters resolved from the Hyperopt index file and gnn_train.py search spaces.
+# These are the numerical values actually selected by the stored indices.
+model_name: DeepTPACS
+target: "lg(TPACS)"
+feature_num: 6
+random_seed: 42
+
+hyperparameters:
+  dropout: 0.0
+  graph_feat_size: 300
+  l2_weight_decay: 1.0e-6
+  learning_rate: 3.1622776601683795e-4
+  num_layers: 3
+  num_timesteps: 2
+
+source_indices:
+  dropout: 0
+  graph_feat_size: 2
+  l2: 2
+  lr: 1
+  num_layers: 1
+  num_timesteps: 0
+
+search_spaces:
+  dropout: [0.0, 0.1, 0.2]
+  graph_feat_size: [100, 200, 300]
+  l2: [0.0, 1.0e-8, 1.0e-6, 1.0e-4]
+  learning_rate: [3.1622776601683795e-3, 3.1622776601683795e-4, 3.1622776601683795e-2]
+  num_layers: [2, 3, 4, 5]
+  num_timesteps: [2, 3, 4, 5]

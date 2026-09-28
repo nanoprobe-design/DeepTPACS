@@ -1,0 +1,4 @@
+id,molecular_name,SMILES,predicted_log10_TPACS,predicted_TPACS
+1,TPP-2MP,COc1ccc(-c2nc(-c3ccc(-c4ccccc4)cc3)c(-c3ccc(OC)cc3)nc2-c2ccc(-c3ccccc3)cc2)cc1,1.3868581056594849,24.37014457673026
+2,"1,4-BPA",c1ccc2cc3c(N4CCCCC4)ccc(N4CCCCC4)c3cc2c1,2.5755317211151123,376.29783627127284
+3,TPE-TAC,CC(C)(C)c1ccc2c(-c3ccc(-n4c5ccccc5c5ccccc54)cc3)c3cc(C(C)(C)C)ccc3c(-c3ccc(C(=C(c4ccccc4)c4ccccc4)c4ccccc4)cc3)c2c1,3.283259153366089,1919.8139954843405
